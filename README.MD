@@ -12,6 +12,18 @@ This repository contains the resources and code related to the paper "Mining and
 
 ## Usage
 
+## Environment Setup
+
+1. Install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Create a `.env` file under the `src` directory with the following content:
+   ```
+   OPENAI_API_KEY=<your_openai_api_key>
+   ```
+   
 ### Constraint Mining
 
 1. **Request-Response Constraints:**
@@ -51,4 +63,3 @@ This repository contains the resources and code related to the paper "Mining and
   ```bash
   python src/evaluate_constraints_mining.py
   ```
-
