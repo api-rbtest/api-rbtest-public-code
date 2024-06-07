@@ -1,0 +1,62 @@
+*output*
+
+error*
+log*
+
+*personal*
+
+*.egg-info
+
+__pycache__/
+.vscode
+
+stack_trace_log/
+
+.DS_Store
+
+*.bin
+
+.env
+
+
+*.yaml
+*.json
+*.csv
+*.graphml
+*.html
+
+test_order.txt
+edges.txt
+
+test.py
+test.ipynb
+
+Tests
+KS_prepared_materials
+Data Files
+Zip Files
+
+Validation scripts/
+
+execute_kataapitestgen.sh
+TestDataGeneratorLogger.txt
+actual_success_responses.json
+report.ipynb
+test.json
+server/
+
+user-prompting/all_in_one_generation.py
+user-prompting/add_bearer_token.py
+
+build
+cachedir
+*.spec
+
+KAT plugin
+odg_generator
+
+example_project
+dist
+x86-64 dist
+
+test_verification_script.py
