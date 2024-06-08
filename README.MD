@@ -10,6 +10,8 @@ This repository contains the resources and code related to the paper "Mining and
 
 - `src`: Contains the source code.
 
+- Benchmark for API Constraints Mining in `approaches/ground_truth`
+
 ## Usage
 
 ## Environment Setup
@@ -23,7 +25,7 @@ This repository contains the resources and code related to the paper "Mining and
    ```
    OPENAI_API_KEY=<your_openai_api_key>
    ```
-   
+
 ### Constraint Mining
 
 1. **Request-Response Constraints:**
