@@ -27,13 +27,13 @@ for file in matched_files:
 
     if file not in file_groups:
         file_groups[file] = {
-            'ours_better': len(df[df['eval'] == 'o']),
-            'agora_better': len(df[df['eval'] == 'a']),
+            'static_better': len(df[df['eval'] == 's']),
+            'dynamic_better': len(df[df['eval'] == 'd']),
             'equal': len(df[df['eval'] == '=']),
         }
     else:
-        file_groups[file]['ours_better'] += len(df[df['eval'] == 'o'])
-        file_groups[file]['agora_better'] += len(df[df['eval'] == 'a'])
+        file_groups[file]['static_better'] += len(df[df['eval'] == 's'])
+        file_groups[file]['dynamic_better'] += len(df[df['eval'] == 'd'])
         file_groups[file]['equal'] += len(df[df['eval'] == '='])
 
     df['file'] = file.replace(root_dir, '').replace(pattern.pattern, '')
