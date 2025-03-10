@@ -74,8 +74,8 @@ This repository contains the resources and code related to the paper "Combining 
 - Overlapping analysis: [`AGORA-eval/overlapping_analysis_all.xlsx`](AGORA-eval/overlapping_analysis_all.xlsx)
 
 **Annotation:**
-- `o`: Static constraint is better
-- `a`: Dynamic invariant is better
+- `s`: Static constraint is better
+- `d`: Dynamic invariant is better
 - `=`: Equivalent constraint
 
 ### RQ1.2, RQ2, RQ3 Results on RBCTest Dataset
