@@ -1,12 +1,12 @@
-# Repository for "Mining and Testing Constraints of Response Body for API Testing"
+# Repository for "Combining Static and Dynamic Approaches for Mining and Testing Constraints for RESTful API Testing"
 
-This repository contains the resources and code related to the paper "Mining and Testing Constraints of Response Body for API Testing."
+This repository contains the resources and code related to the paper "Combining Static and Dynamic Approaches for Mining and Testing Constraints for RESTful API Testing."
 
 ## Folder Structure
 
-- [`RBCTest_dataset`](RBCTest_dataset): Contains the dataset of 8 services, including an OpenAPI specification for each service.
-- [`agora_dataset`](AGORA_dataset): Dataset used in experiment with AGORA.
-- [`approaches`](approaches): Includes our ground-truth constraints, detected constraints from RBCTest, RBCTest--.
+- [`RBCTest_dataset`](RBCTest_dataset): Our self-collected dataset, contains of 8 services, including an OpenAPI specification for each service.
+- [`agora_dataset`](AGORA_dataset): AGORA's dataset.
+- [`approaches`](approaches): Includes our ground-truth constraints, detected constraints from RBCTest, RBCTest-.
 - [`src`](src): Source code.
 - Benchmark for API Constraints Mining in [`approaches/ground_truth`](approaches/ground_truth).
 
@@ -69,18 +69,18 @@ This repository contains the resources and code related to the paper "Mining and
 ## Experimental Results
 
 ### RQ1.1 Results on AGORA Dataset
-- All AGORA detected invariants: [`AGORA-eval/agora_all.xlsx`](AGORA-eval/agora_all.xlsx)
-- All RBCTest detected constraints: see sub-folders in [`approaches/rbctest_agora_data`](approaches/rbctest_agora_data)
+- All Dynamic (AGORA) detected invariants: [`AGORA-eval/agora_all.xlsx`](AGORA-eval/agora_all.xlsx)
+- All Static (LLM-based) detected constraints: see sub-folders in [`approaches/rbctest_agora_data`](approaches/rbctest_agora_data)
 - Overlapping analysis: [`AGORA-eval/overlapping_analysis_all.xlsx`](AGORA-eval/overlapping_analysis_all.xlsx)
 
 **Annotation:**
-- `o`: RBCTest constraint is better
-- `a`: AGORA's invariant is better
-- `=`: Equivalent
+- `o`: Static constraint is better
+- `a`: Dynamic invariant is better
+- `=`: Equivalent constraint
 
 ### RQ1.2, RQ2, RQ3 Results on RBCTest Dataset
 - Results Analysis: [`approach_evaluation_test_gen.csv`](approaches/rbctest_agora_data/approach_evaluation_test_gen.csv)
-- Details: see [`approaches/rbctest_our_data`](approaches/rbctest_our_data) (each subfolder is a SUT)
+- Details: see [`approaches/rbctest_our_data`](approaches/rbctest_our_data) (each subfolder is an API-under-test)
 
 ### RQ4 Usefulness
 - Results Analysis: [`test_outcomes_analyze.csv`](approaches/rbctest_our_data/test_outcomes_analyze.csv)
